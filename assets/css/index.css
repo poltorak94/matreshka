@@ -790,12 +790,12 @@ body {
     gap: 85px;
     padding-top: 45px; }
     .footer__links-item {
-      text-decoration: underline;
+      text-decoration: underline !important;
       color: #2b2929;
       transition: 200ms ease all; }
       .footer__links-item:hover {
         color: #ff8d25; }
       .footer__links-item:first-child {
-        text-decoration: none; }
+        text-decoration: none !important; }
 
 /*# sourceMappingURL=index.css.map */

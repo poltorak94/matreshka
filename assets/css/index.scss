@@ -1098,7 +1098,7 @@ body {
         padding-top: 45px;
 
         &-item {
-            text-decoration: underline;
+            text-decoration: underline !important;
             color: #2b2929;
             transition: 200ms ease all;
 
@@ -1107,7 +1107,7 @@ body {
             }
 
             &:first-child {
-                text-decoration: none;
+                text-decoration: none !important;
             }
         }
     }
