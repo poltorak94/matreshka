@@ -1744,9 +1744,11 @@ body {
     .product-card {
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: top;
         &:hover {
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: top;
         }
     }
 

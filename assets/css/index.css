@@ -1257,10 +1257,12 @@ body {
 
   .product-card {
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: top; }
     .product-card:hover {
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      background-position: top; }
 
   .footer__pattern {
     background-position: right; }
