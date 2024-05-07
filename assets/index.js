@@ -40,19 +40,108 @@ $(document).ready(function () {
         {
             spaceBetween: 20,
             slidesPerView: 3,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    pagination: {
+                        el: ".category-slider--1 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                640: {
+                    slidesPerView: 1.3,
+                    pagination: {
+                        el: ".category-slider--1 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                1000: {
+                    slidesPerView: 2,
+                },
+                1366: {
+                    slidesPerView: 2.5,
+                },
+                1920: {
+                    slidesPerView: 3,
+                },
+            },
         }
     );
+
     let categorySlider2 = new Swiper(
         ".category-slider--2 .category-slider__items",
         {
             spaceBetween: 20,
             slidesPerView: 3,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    pagination: {
+                        el: ".category-slider--2 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                640: {
+                    slidesPerView: 1.3,
+                    pagination: {
+                        el: ".category-slider--2 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                1000: {
+                    slidesPerView: 2,
+                },
+                1366: {
+                    slidesPerView: 2.5,
+                },
+                1920: {
+                    slidesPerView: 3,
+                },
+            },
         }
     );
 
     let brandSlider = new Swiper(".brands__slider", {
-        spaceBetween: 90,
+        spaceBetween: 50,
         slidesPerView: 8,
+        navigation: {
+            nextEl: ".brands .slider-arrows__right",
+            prevEl: ".brands .slider-arrows__left",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".brands .swiper-pagination",
+                    clickable: true,
+                },
+            },
+            480: {
+                slidesPerView: 3,
+                pagination: {
+                    el: ".brands .swiper-pagination",
+                    clickable: true,
+                },
+            },
+            640: {
+                slidesPerView: 3,
+                pagination: {
+                    el: ".brands .swiper-pagination",
+                    clickable: true,
+                },
+            },
+            1000: {
+                slidesPerView: 6,
+            },
+
+            1366: {
+                slidesPerView: 6,
+            },
+            1920: {
+                slidesPerView: 8,
+            },
+        },
     });
 
     let hitSlider = new Swiper(".products-slider--1 .products-slider__inner", {
@@ -61,6 +150,40 @@ $(document).ready(function () {
         navigation: {
             nextEl: ".products-slider--1 .slider-arrows__right",
             prevEl: ".products-slider--1 .slider-arrows__left",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+
+                pagination: {
+                    el: ".products-slider--1 .swiper-pagination",
+                    clickable: true,
+                },
+            },
+            480: {
+                slidesPerView: 1.8,
+                pagination: {
+                    el: ".products-slider--1 .swiper-pagination",
+                    clickable: true,
+                },
+            },
+            640: {
+                slidesPerView: 2.5,
+                pagination: {
+                    el: ".products-slider--1 .swiper-pagination",
+                    clickable: true,
+                },
+            },
+            1000: {
+                slidesPerView: 4,
+            },
+            1366: {
+                slidesPerView: 5,
+            },
+            1920: {
+                slidesPerView: 6,
+            },
         },
     });
 
@@ -73,6 +196,39 @@ $(document).ready(function () {
                 nextEl: ".products-slider--2 .slider-arrows__right",
                 prevEl: ".products-slider--2 .slider-arrows__left",
             },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: ".products-slider--2 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                480: {
+                    slidesPerView: 1.8,
+                    pagination: {
+                        el: ".products-slider--2 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                640: {
+                    slidesPerView: 2.5,
+                    pagination: {
+                        el: ".products-slider--2 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                1000: {
+                    slidesPerView: 4,
+                },
+                1366: {
+                    slidesPerView: 5,
+                },
+                1920: {
+                    slidesPerView: 6,
+                },
+            },
         }
     );
 
@@ -84,6 +240,39 @@ $(document).ready(function () {
             navigation: {
                 nextEl: ".products-slider--3 .slider-arrows__right",
                 prevEl: ".products-slider--3 .slider-arrows__left",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: ".products-slider--3 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                480: {
+                    slidesPerView: 1.8,
+                    pagination: {
+                        el: ".products-slider--3 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                640: {
+                    slidesPerView: 2.5,
+                    pagination: {
+                        el: ".products-slider--3 .swiper-pagination",
+                        clickable: true,
+                    },
+                },
+                1000: {
+                    slidesPerView: 4,
+                },
+                1366: {
+                    slidesPerView: 5,
+                },
+                1920: {
+                    slidesPerView: 6,
+                },
             },
         }
     );
@@ -131,5 +320,39 @@ $(document).ready(function () {
             container.removeClass("product-card__controls--added");
             input.val(parseInt(input.attr("data-min")));
         }, 2500);
+    });
+
+    //поиск адаптив
+    $(".hero__search-link").on("click", function (e) {
+        e.preventDefault();
+        $(this).closest(".hero__bottom").addClass("hero__bottom--search");
+    });
+
+    $(".hero__search__close").on("click", function (e) {
+        e.preventDefault();
+        $(this).closest(".hero__bottom").removeClass("hero__bottom--search");
+    });
+
+    //мобильный слайдер категорий
+
+    let categoryMob = new Swiper(".main-categories__slider", {
+        spaceBetween: 20,
+        slidesPerView: 2.5,
+        pagination: {
+            el: ".main-categories .swiper-pagination",
+            clickable: true,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1.5,
+            },
+            480: {
+                slidesPerView: 1.8,
+            },
+            640: {
+                slidesPerView: 2.5,
+            },
+        },
     });
 });
