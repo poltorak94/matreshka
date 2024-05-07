@@ -1258,7 +1258,8 @@ body {
   .product-card {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top; }
+    background-position: top;
+    transition: none; }
     .product-card:hover {
       background-repeat: no-repeat;
       background-size: cover;

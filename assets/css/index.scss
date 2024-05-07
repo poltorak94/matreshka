@@ -1745,6 +1745,7 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
+        transition: none;
         &:hover {
             background-repeat: no-repeat;
             background-size: cover;
