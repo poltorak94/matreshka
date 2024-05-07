@@ -1256,7 +1256,11 @@ body {
     display: none; }
 
   .product-card {
-    background-size: cover; }
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .product-card:hover {
+      background-repeat: no-repeat;
+      background-size: cover; }
 
   .footer__pattern {
     background-position: right; }
