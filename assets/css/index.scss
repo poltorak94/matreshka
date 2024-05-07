@@ -1772,3 +1772,138 @@ body {
         font-size: 32px;
     }
 }
+
+.arab {
+    .header__container {
+        flex-direction: row-reverse;
+    }
+
+    .header__lang-item {
+        flex-direction: row-reverse;
+    }
+
+    .header__right {
+        flex-direction: row-reverse;
+    }
+
+    .hero__bottom {
+        flex-direction: row-reverse;
+    }
+
+    .hero__search-field {
+        text-align: right;
+    }
+
+    .hero__search-field {
+        padding: 19px 50px 19px 140px;
+    }
+    .hero__search-submit {
+        right: auto;
+        left: 4px;
+    }
+    .hero__search-icon {
+        left: auto;
+        right: 19px;
+    }
+
+    .hero__catalog {
+        flex-direction: row-reverse;
+    }
+
+    .main-nav {
+        justify-content: flex-end;
+    }
+
+    .main-banner__slide {
+        justify-content: flex-end;
+    }
+
+    .main-banner__slide-group {
+        text-align: right;
+    }
+
+    .main-banner__slide-desc {
+        margin: 0 0 38px auto;
+    }
+
+    .main-categories__header {
+        flex-direction: row-reverse;
+    }
+
+    .category-slider__item-text {
+        align-items: flex-end;
+    }
+
+    .title {
+        text-align: right;
+    }
+
+    .banner__text {
+        text-align: right;
+    }
+
+    .product-card__info {
+        text-align: right;
+    }
+
+    .product-card__controls {
+        flex-direction: row-reverse;
+    }
+
+    .seo-text p {
+        text-align: right;
+    }
+
+    .banner-spec {
+        text-align: right;
+    }
+
+    .banner-spec__scheme {
+        flex-direction: row-reverse;
+    }
+
+    .banner-spec__desc {
+        margin: 0 0 32px auto;
+    }
+
+    .footer__nav {
+        flex-direction: row-reverse;
+    }
+
+    .footer__payment {
+        right: auto;
+        left: 0;
+    }
+
+    .footer__links {
+        justify-content: flex-end;
+    }
+
+    .footer__payment-title {
+        text-align: right;
+    }
+    .footer__payment-items {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    @media (max-width: 999px) {
+        .banner-spec__desc {
+            align-items: flex-end;
+        }
+
+        .footer__mob-nav {
+            justify-content: flex-end;
+        }
+    }
+
+    @media (max-width: 479px) {
+        .hero__title {
+            padding-top: 25px;
+        }
+
+        .hero__search-field {
+            padding: 10px 40px 10px 80px;
+        }
+    }
+}
