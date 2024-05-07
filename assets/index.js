@@ -8,8 +8,7 @@ $(document).ready(function () {
         $(this).toggleClass("header__lang-item--active");
     });
 
-    $(".header__lang-items .header__lang-item").on("click", function (e) {
-        e.preventDefault();
+    $(".header__lang-items .header__lang-item").on("click", function () {
         $(".header__lang-items").removeClass("header__lang-items--show");
         $(".header__lang-selected .header__lang-item").removeClass(
             "header__lang-item--active"
