@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Matreshka</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plugins/swiper/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plugins/modal/jquery.modal.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/index.css" />
+    </head>
+    <body>
+        <header class="header header--main">
+            <div class="header__container container">
+                <div class="header__left">
+                    <div class="header__lang">
+                        <div class="header__lang-selected">
+                            <div class="header__lang-item">
+                                <img
+                                    src="./assets/img/rus.png"
+                                    alt=""
+                                    class="header__lang-icon"
+                                />
+                                <span>Rus</span>
+                            </div>
+                        </div>
+                        <div class="header__lang-items">
+                            <a href="#" class="header__lang-item">
+                                <img
+                                    src="./assets/img/en.png"
+                                    alt=""
+                                    class="header__lang-icon"
+                                />
+                                <span>Eng</span>
+                            </a>
+                            <a
+                                href="matreshka-arab.html"
+                                class="header__lang-item"
+                            >
+                                <img
+                                    src="./assets/img/arab.png"
+                                    alt=""
+                                    class="header__lang-icon"
+                                />
+                                <span>Ar</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="header__logo"
+                        >MATRESHKA<span></span>PLACE</a
+                    >
+                </div>
+                <div class="header__right">
+                    <div class="hero__bottom">
+                        <a href="#" class="hero__catalog">
+                            <svg
+                                width="15"
+                                height="16"
+                                viewBox="0 0 15 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 1H14M1 8H14M1 15H14"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+                            </svg>
+                            Каталог
+                        </a>
+                        <a href="#" class="hero__search-link">
+                            <svg
+                                width="52"
+                                height="52"
+                                viewBox="0 0 52 52"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    cx="26.0015"
+                                    cy="26"
+                                    r="26"
+                                    fill="white"
+                                ></circle>
+                                <path
+                                    d="M34.2944 35.7071C34.6849 36.0976 35.318 36.0976 35.7086 35.7071C36.0991 35.3166 36.0991 34.6834 35.7086 34.2929L34.2944 35.7071ZM25.0015 32C21.1355 32 18.0015 28.866 18.0015 25H16.0015C16.0015 29.9706 20.0309 34 25.0015 34V32ZM18.0015 25C18.0015 21.134 21.1355 18 25.0015 18V16C20.0309 16 16.0015 20.0294 16.0015 25H18.0015ZM25.0015 18C28.8675 18 32.0015 21.134 32.0015 25H34.0015C34.0015 20.0294 29.972 16 25.0015 16V18ZM32.0015 25C32.0015 26.9333 31.2191 28.6819 29.9512 29.9497L31.3654 31.364C32.993 29.7364 34.0015 27.485 34.0015 25H32.0015ZM29.9512 29.9497C28.6834 31.2176 26.9347 32 25.0015 32V34C27.4865 34 29.7378 32.9915 31.3654 31.364L29.9512 29.9497ZM29.9512 31.364L34.2944 35.7071L35.7086 34.2929L31.3654 29.9497L29.9512 31.364Z"
+                                    fill="black"
+                                ></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="hero__search__close">
+                            <svg
+                                width="18"
+                                height="17"
+                                viewBox="0 0 18 17"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M16.4141 1L1.41406 16M1 1L16 16"
+                                    stroke="black"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                ></path>
+                            </svg>
+                        </a>
+                        <form action="#" class="hero__search">
+                            <svg
+                                class="hero__search-icon"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M19 19L14.6569 14.6569M14.6569 14.6569C16.1046 13.2091 17 11.2091 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17C11.2091 17 13.2091 16.1046 14.6569 14.6569Z"
+                                    stroke="#2B2929"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                            <input
+                                type="text"
+                                class="hero__search-field"
+                                placeholder="Поиск по сайту"
+                            />
+                            <input
+                                type="submit"
+                                value="Найти"
+                                class="hero__search-submit"
+                            />
+                        </form>
+                        <a href="#" class="header__cart header__cart--mob">
+                            <span class="header__cart-icon"></span>
+                            <span class="header__cart-counter">23</span>
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <a href="#" class="header__nav-item">О компании</a>
+                        <a href="#" class="header__nav-item">Покупателям</a>
+                        <a href="#" class="header__nav-item">Поставщикам</a>
+                        <a href="#" class="header__nav-item">Помощь</a>
+                    </nav>
+                    <div class="header__profile">
+                        <a href="#" class="header__login">
+                            <svg
+                                width="14"
+                                height="17"
+                                viewBox="0 0 14 17"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M13 16C13 13.7909 10.3137 12 7 12C3.68629 12 1 13.7909 1 16M7 9C4.79086 9 3 7.20914 3 5C3 2.79086 4.79086 1 7 1C9.20914 1 11 2.79086 11 5C11 7.20914 9.20914 9 7 9Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            Вход
+                        </a>
+                        <a href="#" class="header__cart">
+                            <span class="header__cart-icon"></span>
+                            <span class="header__cart-counter">23</span>
+                        </a>
+                        <a
+                            href="#modal-header"
+                            class="header__burger"
+                            rel="modal:open"
+                        >
+                            <span class="header__burger-container">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__bottom hero__bottom--spec">
+                    <a href="#" class="hero__catalog">
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M1 1H14M1 8H14M1 15H14"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                        Каталог товаров
+                    </a>
+                    <a href="#" class="hero__search-link">
+                        <svg
+                            width="52"
+                            height="52"
+                            viewBox="0 0 52 52"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle
+                                cx="26.0015"
+                                cy="26"
+                                r="26"
+                                fill="white"
+                            ></circle>
+                            <path
+                                d="M34.2944 35.7071C34.6849 36.0976 35.318 36.0976 35.7086 35.7071C36.0991 35.3166 36.0991 34.6834 35.7086 34.2929L34.2944 35.7071ZM25.0015 32C21.1355 32 18.0015 28.866 18.0015 25H16.0015C16.0015 29.9706 20.0309 34 25.0015 34V32ZM18.0015 25C18.0015 21.134 21.1355 18 25.0015 18V16C20.0309 16 16.0015 20.0294 16.0015 25H18.0015ZM25.0015 18C28.8675 18 32.0015 21.134 32.0015 25H34.0015C34.0015 20.0294 29.972 16 25.0015 16V18ZM32.0015 25C32.0015 26.9333 31.2191 28.6819 29.9512 29.9497L31.3654 31.364C32.993 29.7364 34.0015 27.485 34.0015 25H32.0015ZM29.9512 29.9497C28.6834 31.2176 26.9347 32 25.0015 32V34C27.4865 34 29.7378 32.9915 31.3654 31.364L29.9512 29.9497ZM29.9512 31.364L34.2944 35.7071L35.7086 34.2929L31.3654 29.9497L29.9512 31.364Z"
+                                fill="black"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="hero__search__close">
+                        <svg
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M16.4141 1L1.41406 16M1 1L16 16"
+                                stroke="black"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            ></path>
+                        </svg>
+                    </a>
+                    <form action="#" class="hero__search">
+                        <svg
+                            class="hero__search-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M19 19L14.6569 14.6569M14.6569 14.6569C16.1046 13.2091 17 11.2091 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17C11.2091 17 13.2091 16.1046 14.6569 14.6569Z"
+                                stroke="#2B2929"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                        <input
+                            type="text"
+                            class="hero__search-field"
+                            placeholder="Поиск по сайту"
+                        />
+                        <input
+                            type="submit"
+                            value="Найти"
+                            class="hero__search-submit"
+                        />
+                    </form>
+                    <a href="#" class="header__cart header__cart--mob">
+                        <span class="header__cart-icon"></span>
+                        <span class="header__cart-counter">23</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="text-page container">
+                <div class="breadcrumbs">
+                    <a href="#" class="breadcrumbs__item">Главная </a>
+                    <span class="breadcrumbs__item breadcrumbs__item--active">
+                        Типовая
+                    </span>
+                </div>
+
+                <div class="text-page__inner">
+                    <div class="text-page__block">
+                        <h1>Заголовок H1</h1>
+                        <p>
+                            Чтобы создать идеальные спортивные часы, мы
+                            тщательно проработали каждый элемент с особым
+                            вниманием к деталям, обеспечивая непревзойденную
+                            производительность. Титан обеспечивает идеальный
+                            баланс между весом, прочностью и устойчивостью к
+                            коррозии. Новый дизайн корпуса поднимается вверх,
+                            окружая плоское сапфировое стекло и защищая его от
+                            ударов по краям. Цифровая заводная головка больше, а
+                            боковая кнопка выступает из корпуса, что упрощает
+                            использование часов в перчатках.
+                        </p>
+                        <p>
+                            Специально для Apple Watch Ultra циферблат Wayfinder
+                            оснащен циферблатом времени, который можно
+                            переключать на компас в режиме реального времени, и
+                            имеет восемь дополнительных функций. В условиях
+                            низкой освещенности вы можете повернуть цифровую
+                            заводную головку, чтобы активировать ночной режим, и
+                            увидеть, как циферблат часов становится
+                            ярко-красным.
+                        </p>
+                    </div>
+                    <div class="text-page__block">
+                        <h2>Заголовок H2</h2>
+
+                        <p>
+                            Чтобы создать идеальные спортивные часы, мы
+                            тщательно проработали каждый элемент с особым
+                            вниманием к деталям, обеспечивая непревзойденную
+                            производительность. Титан обеспечивает идеальный
+                            баланс между весом, прочностью и устойчивостью к
+                            коррозии. Новый дизайн корпуса поднимается вверх,
+                            окружая плоское сапфировое стекло и защищая его от
+                            ударов по краям. Цифровая заводная головка больше, а
+                            боковая кнопка выступает из корпуса, что упрощает
+                            использование часов в перчатках.
+                        </p>
+                        <p>
+                            Специально для Apple Watch Ultra циферблат Wayfinder
+                            оснащен циферблатом времени, который можно
+                            переключать на компас в режиме реального времени, и
+                            имеет восемь дополнительных функций. В условиях
+                            низкой освещенности вы можете повернуть цифровую
+                            заводную головку, чтобы активировать ночной режим, и
+                            увидеть, как циферблат часов становится
+                            ярко-красным.
+                        </p>
+                    </div>
+                    <div class="text-page__block">
+                        <h3>Заголовок H3</h3>
+
+                        <p>
+                            Чтобы создать идеальные спортивные часы, мы
+                            тщательно проработали каждый элемент с особым
+                            вниманием к деталям, обеспечивая непревзойденную
+                            производительность. Титан обеспечивает идеальный
+                            баланс между весом, прочностью и устойчивостью к
+                            коррозии. Новый дизайн корпуса поднимается вверх,
+                            окружая плоское сапфировое стекло и защищая его от
+                            ударов по краям. Цифровая заводная головка больше, а
+                            боковая кнопка выступает из корпуса, что упрощает
+                            использование часов в перчатках.
+                        </p>
+                        <p>
+                            Специально для Apple Watch Ultra циферблат Wayfinder
+                            оснащен циферблатом времени, который можно
+                            переключать на компас в режиме реального времени, и
+                            имеет восемь дополнительных функций. В условиях
+                            низкой освещенности вы можете повернуть цифровую
+                            заводную головку, чтобы активировать ночной режим, и
+                            увидеть, как циферблат часов становится
+                            ярко-красным.
+                        </p>
+                    </div>
+                    <div class="text-page__block">
+                        <h4>Заголовок H4</h4>
+
+                        <p>
+                            Чтобы создать идеальные спортивные часы, мы
+                            тщательно проработали каждый элемент с особым
+                            вниманием к деталям, обеспечивая непревзойденную
+                            производительность. Титан обеспечивает идеальный
+                            баланс между весом, прочностью и устойчивостью к
+                            коррозии. Новый дизайн корпуса поднимается вверх,
+                            окружая плоское сапфировое стекло и защищая его от
+                            ударов по краям. Цифровая заводная головка больше, а
+                            боковая кнопка выступает из корпуса, что упрощает
+                            использование часов в перчатках.
+                        </p>
+                        <p>
+                            Специально для Apple Watch Ultra циферблат Wayfinder
+                            оснащен циферблатом времени, который можно
+                            переключать на компас в режиме реального времени, и
+                            имеет восемь дополнительных функций. В условиях
+                            низкой освещенности вы можете повернуть цифровую
+                            заводную головку, чтобы активировать ночной режим, и
+                            увидеть, как циферблат часов становится
+                            ярко-красным.
+                        </p>
+                    </div>
+                    <div class="text-page__block">
+                        <h5>Заголовок H5</h5>
+
+                        <p>
+                            Чтобы создать идеальные спортивные часы, мы
+                            тщательно проработали каждый элемент с особым
+                            вниманием к деталям, обеспечивая непревзойденную
+                            производительность. Титан обеспечивает идеальный
+                            баланс между весом, прочностью и устойчивостью к
+                            коррозии. Новый дизайн корпуса поднимается вверх,
+                            окружая плоское сапфировое стекло и защищая его от
+                            ударов по краям. Цифровая заводная головка больше, а
+                            боковая кнопка выступает из корпуса, что упрощает
+                            использование часов в перчатках.
+                        </p>
+                        <p>
+                            Специально для Apple Watch Ultra циферблат Wayfinder
+                            оснащен циферблатом времени, который можно
+                            переключать на компас в режиме реального времени, и
+                            имеет восемь дополнительных функций. В условиях
+                            низкой освещенности вы можете повернуть цифровую
+                            заводную головку, чтобы активировать ночной режим, и
+                            увидеть, как циферблат часов становится
+                            ярко-красным.
+                        </p>
+                    </div>
+                    <div class="text-page__block">
+                        <div class="text-page__title">Списки</div>
+                        <ol>
+                            <li>Автомобиль</li>
+                            <li>Мотоцикл</li>
+                            <li>Велосипед</li>
+                            <li>Квадроцикл</li>
+                            <li>Мопед</li>
+                            <li>Скутер</li>
+                            <li>Самокат</li>
+                        </ol>
+                        <ul>
+                            <li>Автомобиль</li>
+                            <li>Мотоцикл</li>
+                            <li>Велосипед</li>
+                            <li>Квадроцикл</li>
+                            <li>Мопед</li>
+                            <li>Скутер</li>
+                            <li>Самокат</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__pattern"></div>
+            <div class="footer__container">
+                <div class="container">
+                    <div class="footer__holder">
+                        <div class="footer__nav">
+                            <div class="footer__nav-group">
+                                <a
+                                    href="#"
+                                    class="footer__nav-item footer__nav-item--title"
+                                >
+                                    Покупателям
+                                </a>
+                                <a href="#" class="footer__nav-item">
+                                    Как сделать заказ
+                                </a>
+                                <a href="#" class="footer__nav-item">
+                                    Доставка
+                                </a>
+                                <a href="#" class="footer__nav-item">
+                                    Способы оплаты
+                                </a>
+                                <a href="#" class="footer__nav-item">
+                                    Возврат товара
+                                </a>
+                                <a href="#" class="footer__nav-item">
+                                    Возврат денежных средств
+                                </a>
+                            </div>
+                            <div class="footer__nav-group">
+                                <a
+                                    href="#"
+                                    class="footer__nav-item footer__nav-item--title"
+                                >
+                                    О компании
+                                </a>
+                                <a href="#" class="footer__nav-item"> О нас </a>
+                                <a href="#" class="footer__nav-item">
+                                    Реквизиты
+                                </a>
+                                <a href="#" class="footer__nav-item">
+                                    Новости
+                                </a>
+                                <a href="#" class="footer__nav-item">
+                                    Контакты
+                                </a>
+                            </div>
+                            <div class="footer__nav-group">
+                                <a
+                                    href="#"
+                                    class="footer__nav-item footer__nav-item--title"
+                                >
+                                    Поставщикам
+                                </a>
+                            </div>
+                            <div class="footer__nav-group">
+                                <a
+                                    href="#"
+                                    class="footer__nav-item footer__nav-item--title"
+                                >
+                                    Помощь
+                                </a>
+                            </div>
+                            <div class="footer__nav-group">
+                                <a
+                                    href="#"
+                                    class="footer__nav-item footer__nav-item--title"
+                                >
+                                    Личный кабинет
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__mob-nav">
+                            <div class="footer__mob-nav-group">
+                                <a href="#" class="footer__mob-nav-item">
+                                    Как сделать заказ
+                                </a>
+                                <a href="#" class="footer__mob-nav-item">
+                                    Доставка
+                                </a>
+                                <a href="#" class="footer__mob-nav-item">
+                                    Способы оплаты
+                                </a>
+                                <a href="#" class="footer__mob-nav-item">
+                                    Возврат товара
+                                </a>
+                                <a href="#" class="footer__mob-nav-item">
+                                    Возврат денежных средств
+                                </a>
+                            </div>
+                            <div class="footer__mob-nav-group">
+                                <a href="#" class="footer__mob-nav-item">
+                                    О нас
+                                </a>
+                                <a href="#" class="footer__mob-nav-item">
+                                    Реквизиты
+                                </a>
+                                <a href="#" class="footer__mob-nav-item">
+                                    Новости
+                                </a>
+                                <a href="#" class="footer__mob-nav-item">
+                                    Контакты
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__payment">
+                            <div class="footer__payment-title">
+                                Платёжные системы
+                            </div>
+                            <div class="footer__payment-items">
+                                <div class="footer__payment-item">
+                                    <img src="./assets/img/paypal.png" alt="" />
+                                </div>
+                                <div class="footer__payment-item">
+                                    <img src="./assets/img/visa.png" alt="" />
+                                </div>
+                                <div class="footer__payment-item">
+                                    <img src="./assets/img/btc.png" alt="" />
+                                </div>
+                                <div class="footer__payment-item">
+                                    <img
+                                        src="./assets/img/master-card.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__links">
+                        <a href="#" class="footer__links-item">
+                            Пользовательское соглашение
+                        </a>
+                        <a href="#" class="footer__links-item">
+                            Политика конфиденциальности
+                        </a>
+                        <a href="#" class="footer__links-item">
+                            2024 ©️ Матрёшка интернет магазин
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal modal-header" id="modal-header">
+            <div class="modal-header__top">
+                <a href="#modal-header" rel="modal:close">
+                    <svg
+                        width="18"
+                        height="17"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M16.4141 1L1.41406 16M1 1L16 16"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="modal-header__items">
+                <div class="modal-header__menu">
+                    <div class="modal-heaedr__group">
+                        <a
+                            href="#"
+                            class="modal-header__title modal-header__title--inner"
+                        >
+                            О компании
+                            <svg
+                                width="12"
+                                height="7"
+                                viewBox="0 0 12 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.376 1.32935L6.37598 6.32935"
+                                    stroke="black"
+                                    stroke-linecap="round"
+                                />
+                                <path
+                                    d="M1 1L6 6"
+                                    stroke="black"
+                                    stroke-linecap="round"
+                                />
+                            </svg>
+                        </a>
+                        <div class="modal-header__inner">
+                            <a href="#" class="modal-header__item">
+                                О компании
+                            </a>
+                            <a href="#" class="modal-header__item">
+                                О компании
+                            </a>
+                            <a href="#" class="modal-header__item">
+                                О компании
+                            </a>
+                            <a href="#" class="modal-header__item">
+                                О компании
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-heaedr__group">
+                        <a
+                            href="#"
+                            class="modal-header__title modal-header__title--inner"
+                        >
+                            Покупателям
+                            <svg
+                                width="12"
+                                height="7"
+                                viewBox="0 0 12 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.376 1.32935L6.37598 6.32935"
+                                    stroke="black"
+                                    stroke-linecap="round"
+                                />
+                                <path
+                                    d="M1 1L6 6"
+                                    stroke="black"
+                                    stroke-linecap="round"
+                                />
+                            </svg>
+                        </a>
+                        <div class="modal-header__inner">
+                            <a href="#" class="modal-header__item">
+                                Покупателям
+                            </a>
+                            <a href="#" class="modal-header__item">
+                                Покупателям
+                            </a>
+                            <a href="#" class="modal-header__item">
+                                Покупателям
+                            </a>
+                            <a href="#" class="modal-header__item">
+                                Покупателям
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-header__group">
+                        <a href="#" class="modal-header__title">
+                            Поставщикам
+                        </a>
+                    </div>
+                    <div class="modal-header__group">
+                        <a href="#" class="modal-header__title"> Помощь </a>
+                    </div>
+                    <div class="modal-header__group">
+                        <a href="#" class="modal-header__title">
+                            Личный кабинет
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-header__bottom">
+                    <a href="#"> Пользовательское соглашение </a>
+                    <a href="#"> Политика конфиденциальности </a>
+                    <a href="#"> 2024 ©️ Матрёшка интернет магазин </a>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/plugins/modal/jquery.modal.min.js"></script>
+        <script src="./assets/index.js"></script>
+    </body>
+</html>
