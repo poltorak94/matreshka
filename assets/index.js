@@ -319,7 +319,74 @@ $(document).ready(function () {
         },
     });
 
-    //modal
+    //gallery product page
+    $(".product__gallery-thumb").on("click", function (e) {
+        e.preventDefault();
+        $(this)
+            .closest(".product__gallery-thumbs")
+            .find(".product__gallery-thumb")
+            .removeClass("product__gallery-thumb--active");
+
+        $(this).addClass("product__gallery-thumb--active");
+
+        let activeSrc = $(this).find("img").attr("src");
+
+        $(".product__main-image-item").attr("src", activeSrc);
+    });
+
+    //tabs product page
+    $(".product__tabs-header-item").on("click", function (e) {
+        e.preventDefault();
+        $(".product__tabs-header-item").removeClass(
+            "product__tabs-header-item--active"
+        );
+        $(this).addClass("product__tabs-header-item--active");
+
+        let navId = $(this).attr("data-id");
+        $(".product__tabs-item").hide();
+
+        $(".product__tabs-item").each(function () {
+            let tabId = $(this).attr("data-id");
+            if (tabId == navId) {
+                $(this).show();
+            }
+        });
+    });
+
+    if ($(".product").length) {
+        Fancybox.bind("[data-fancybox]");
+    }
+    //rate
+    $(".modal-review__rate-container").click(function (e) {
+        let rateWidth = $(this).width();
+        var posX = parseInt(e.pageX - $(this).offset().left);
+        let container = $(this);
+
+        let percetn = parseInt((posX * 100) / rateWidth);
+        if (percetn <= 20) {
+            container.removeClass("rate-1 rate-2 rate-3 rate-4 rate-5");
+            container.addClass("rate-1 ");
+        } else if (percetn <= 40) {
+            container.removeClass("rate-1 rate-2 rate-3 rate-4 rate-5");
+            container.addClass("rate-2 ");
+        } else if (percetn <= 60) {
+            container.removeClass("rate-1 rate-2 rate-3 rate-4 rate-5");
+            container.addClass("rate-3");
+        } else if (percetn <= 80) {
+            container.removeClass("rate-1 rate-2 rate-3 rate-4 rate-5");
+            container.addClass("rate-4 ");
+        } else if (percetn <= 100) {
+            container.removeClass("rate-1 rate-2 rate-3 rate-4 rate-5");
+            container.addClass("rate-5 ");
+        }
+    });
+
+    //input file
+
+    $(".modal-review__pseudo-file").on("click", function (e) {
+        e.preventDefault();
+        $(".modal-review__file").click();
+    });
     $("a[data-modal]").click(function (event) {
         $(this).modal();
         return false;
