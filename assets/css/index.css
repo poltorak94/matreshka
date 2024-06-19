@@ -2243,7 +2243,8 @@ body {
 .comments__like {
   display: inline-flex;
   gap: 5px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  color: #2b2929; }
   .comments__like-active {
     display: none; }
   .comments__like--active img {
@@ -2253,7 +2254,8 @@ body {
 .comments__dislike {
   display: inline-flex;
   gap: 5px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  color: #2b2929; }
   .comments__dislike-active {
     display: none; }
   .comments__dislike--active img {
